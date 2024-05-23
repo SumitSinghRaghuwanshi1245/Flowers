@@ -60,14 +60,14 @@ setInterval(updateLyrics, 1);
 
 //funcion title
 // Feature to hide title after 216 seconds
-function ocultarTitulo() {
-  var titulo = document.querySelector(".titulo");
-  titulo.style.animation =
+function hideTitle() {
+  var title = document.querySelector(".title");
+  title.style.animation =
     "fadeOut 0.5s ease-in-out forwards"; /* Vanishing duration and timing function */
   setTimeout(function () {
-    titulo.style.display = "none";
+    title.style.display = "none";
   }, 500); // Wait 3 seconds before hiding completely
 }
 
 //Call the function after 216 seconds (216,000 milliseconds)
-setTimeout(ocultarTitulo, 1000);
+setTimeout(hideTitle, 1000);
